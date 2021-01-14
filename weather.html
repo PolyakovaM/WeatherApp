@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://kit.fontawesome.com/5ee135209c.js"></script>
+    <link href="weather.css" rel="stylesheet" type="text/css">
+    <title>New Tab App</title>
+</head>
+<body>
+    <div class="weather_forecast">
+        <div class="weather_forecast_wrapper">
+
+        <h1>Weather Forecast</h1>
+        <div class="weather_forms">
+          <input class="selected_city" type="text" placeholder="Введите название города">
+          <button class="search_button">Найти</button>
+        </div>
+        <div class="not_found">По вашему запросу ничего не найдено</div>
+        <div class="weather_forecast_items">
+          <div class="favorite_cities">
+            <span>Избранное</span>
+            <div class="added_cities">
+
+            </div>
+          </div>
+  
+          <div class="all_info_about_weather">
+            <div class="city_elem"></div>
+            <div class="temp elem_border">
+              <span></span>
+              <span></span>
+            </div>
+            <div class="feels_like elem_border">
+              <span></span>
+              <span></span>
+            </div>
+            <div class="cloudy elem_border">
+              <span></span>
+              <span></span>
+            </div>
+            <div class="humidity elem_border">
+              <span></span>
+              <span></span>
+            </div>
+            <div class="pressure elem_border">
+              <span></span>
+              <span></span>
+            </div>
+            <div class="wind_speed elem_border">
+              <span></span>
+              <span></span>
+            </div>
+            <button class="add_button">Добавить в избранное</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="weather.js"></script>
+  </body>
+</html>

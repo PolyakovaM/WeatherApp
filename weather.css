@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+input, button {
+  outline: none;
+  border: none;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+input {
+  width: 400px;
+}
+
+button, i {
+  cursor: pointer;
+}
+
+button {
+  background-color: rgb(138, 202, 108);
+}
+
+.weather_forecast {
+  background-image: url('shutterstock_70809265.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+}
+
+.weather_forecast_wrapper {
+  margin: 50px auto 0;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+
+.weather_forecast_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 70%;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+.favorite_cities {
+  padding: 10px;
+  width: 600px;
+  min-height: 100px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.favorite_cities span {
+  font-size: 25px
+}
+
+.all_info_about_weather {
+  color: sienna;
+  padding: 20px;
+  width: 300px;
+  min-height: 400px;
+  text-align: start;
+  background-color: transparent;
+}
+
+.add_button {
+  display: none;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.all_info_about_weather > :not(.city_elem) {
+  margin-top: 15px;
+}
+
+.all_info_about_weather > div:not(.city_elem) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.city_elem {
+  font-weight: 600;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.added_cities {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  
+}
+
+.added_cities > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  padding: 10px;
+}
+
+.added_cities i {
+  opacity: .6;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.not_found {
+  height: 50px;
+  color: transparent;
+  padding: 15px;
+  width: 30%;
+  margin: 20px auto;
+}
+
+.not_found_color {
+  border-radius: 15px;
+  background-color: rgb(185 72 72 / 34%);
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.usedCity {
+  cursor: pointer;
+}
